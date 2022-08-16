@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>DrivenEats</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="topo">
+				<div class="text">
+					<h1 class="nome_app">DrivenEats</h1>
+					<h2 class="slogan_app">Sua comida em 6 minutos</h2>
+				</div>
+			</div>
+			<div class="principal">
+				<div class="container">
+					<div class="titulo">
+						<h1>Primeiro seu prato</h1>
+					</div>
+					<div class="container_comida">
+						<div class="itens">
+							<div
+								class="item djo"
+								onclick="selecionarComida(this)"
+							>
+								<img src="./imagens/4djo.jpg" />
+								<h1 class="titulo_pedido">Djo</h1>
+								<h2 class="descricao_pedido">
+									4 unidades de djo de salmão.
+								</h2>
+								<h2 class="valor_pedido">R$ 14,99</h2>
+								<ion-icon name="checkmark-circle"></ion-icon>
+							</div>
+
+							<div
+								class="item sashimi"
+								onclick="selecionarComida(this)"
+							>
+								<img src="./imagens/5sashimi.jpg" />
+								<h1 class="titulo_pedido">Sashimi</h1>
+								<h2 class="descricao_pedido">
+									5 unidades de sashimi fresquinhos.
+								</h2>
+
+								<h2 class="valor_pedido">R$ 15,47</h2>
+								<ion-icon name="checkmark-circle"></ion-icon>
+							</div>
+
+							<div
+								class="item hotroll"
+								onclick="selecionarComida(this)"
+							>
+								<img src="./imagens/8hotroll.jpg" />
+								<h1 class="titulo_pedido">Hot Roll</h1>
+								<h2 class="descricao_pedido">
+									8 unidades de Hot Roll Philadelphia.
+								</h2>
+
+								<h2 class="valor_pedido">R$ 19,60</h2>
+								<ion-icon name="checkmark-circle"></ion-icon>
+							</div>
+
+							<div
+								class="item uramaki"
+								onclick="selecionarComida(this)"
+							>
+								<img src="./imagens/8uramakis.jpg" />
+								<h1 class="titulo_pedido">Uramaki</h1>
+								<h2 class="descricao_pedido">
+									8 unidades de uramaki.
+								</h2>
+
+								<h2 class="valor_pedido">R$ 18,99</h2>
+								<ion-icon name="checkmark-circle"></ion-icon>
+							</div>
+
+							<div
+								class="item barca"
+								onclick="selecionarComida(this)"
+							>
+								<img src="./imagens/barca_30pecas.jpg" />
+								<h1 class="titulo_pedido">Barca 30</h1>
+								<h2 class="descricao_pedido">
+									30 peças diversificadas.
+								</h2>
+
+								<h2 class="valor_pedido">R$ 61,99</h2>
+								<ion-icon name="checkmark-circle"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="titulo">
+						<h1>Agora, sua bebida</h1>
+					</div>
+					<div class="container_bebida">
+						<div class="itens">
+							<div
+								class="item agua"
+								onclick="selecionarBebidas(this)"
+							>
+								<img src="./imagens/agua.jpg" />
+								<h1 class="titulo_pedido">Agua mineral</h1>
+								<h2 class="descricao_pedido">com e sem gás.</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 2,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item cocacola"
+								onclick="selecionarBebidas(this)"
+							>
+								<img src="./imagens/cocacola.jpg" />
+								<h1 class="titulo_pedido">Coca-cola</h1>
+								<h2 class="descricao_pedido">
+									refrigerante 350ml.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 4,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item cerveja"
+								onclick="selecionarBebidas(this)"
+							>
+								<img src="./imagens/cerveja.jpg" />
+								<h1 class="titulo_pedido">Budweiser</h1>
+								<h2 class="descricao_pedido">cerveja 269ml.</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 6,40</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item suco"
+								onclick="selecionarBebidas(this)"
+							>
+								<img src="./imagens/sucolaranja.jpg" />
+								<h1 class="titulo_pedido">Suco de laranja</h1>
+								<h2 class="descricao_pedido">
+									copo de suco natural.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 5,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item guarana"
+								onclick="selecionarBebidas(this)"
+							>
+								<img src="./imagens/guarana.jpg" />
+								<h1 class="titulo_pedido">Guarana Antartica</h1>
+								<h2 class="descricao_pedido">
+									refrigerante 350ml.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 4,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="titulo">
+						<h1>Por fim, sua sobremesa</h1>
+					</div>
+
+					<div class="container_sobremesa">
+						<div class="itens">
+							<div
+								class="item harumaki"
+								onclick="selecionarSobremesa(this)"
+							>
+								<img src="./imagens/harumaki.jpg" />
+								<h1 class="titulo_pedido">Harumaki</h1>
+								<h2 class="descricao_pedido">
+									4 harumakis de banana.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 12,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item pudim"
+								onclick="selecionarSobremesa(this)"
+							>
+								<img src="./imagens/pudim.jpg" />
+								<h1 class="titulo_pedido">Pudim</h1>
+								<h2 class="descricao_pedido">
+									Pudim de leite condensado.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 5,40</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item torta"
+								onclick="selecionarSobremesa(this)"
+							>
+								<img src="./imagens/torta.jpg" />
+								<h1 class="titulo_pedido">Torta holandesa</h1>
+								<h2 class="descricao_pedido">
+									Fatia de torta holandesa.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 17,00</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item brigadeiro"
+								onclick="selecionarSobremesa(this)"
+							>
+								<img src="./imagens/brigadeiro.jpg" />
+								<h1 class="titulo_pedido">
+									Brigadeiro de chocolate
+								</h1>
+								<h2 class="descricao_pedido">1 unidade.</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 2,99</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+
+							<div
+								class="item gelatina"
+								onclick="selecionarSobremesa(this)"
+							>
+								<img src="./imagens/gelatina.jpg" />
+								<h1 class="titulo_pedido">Gelatina</h1>
+								<h2 class="descricao_pedido">
+									Gelatina diversos sabores.
+								</h2>
+
+								<div class="checkmark">
+									<h2 class="valor_pedido">R$ 9,50</h2>
+									<ion-icon
+										name="checkmark-circle"
+									></ion-icon>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="confirmar_pedido">
+				<div class="selecionar">
+					<h1 class="texto_confirmar">
+						Selecione os 3 itens para fechar o pedido
+					</h1>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
